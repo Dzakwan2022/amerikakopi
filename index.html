@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amerikopi — Pesan Kopi Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="#top" class="logo"><i class="fa-solid fa-mug-hot"></i><span>Amerikopi</span></a>
+    <nav class="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="#cara">Cara Pesan</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#lokasi">Lokasi</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm" href="https://wa.me/6281234567890" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chat Barista</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>Buka Setiap Hari · 08.00 – 02.00</span>
+      <h1>Kopi segar,<br>dipesan <span>tanpa antri</span></h1>
+      <p class="lead">Pilih menu favoritmu, ketuk tombol pesan, lalu ambil di Toko atau minta diantar. Biji pilihan, diseduh saat kamu pesan.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-mug-saucer"></i>Pesan Sekarang</a>
+        <a href="#cara" class="btn btn-ghost">Cara Pesan</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>4.9 ★</b><span>Rating pelanggan</span></div>
+        <div><b>50K+</b><span>Pelanggan setia</span></div>
+        <div><b>±8 mnt</b><span>Estimasi Siap</span></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img class="main" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&h=920&fit=crop" alt="Kopi Amerikopi">
+      <div class="float f2"><i class="fa-solid fa-star"></i><div><b>Kopi Susu Aren</b><small>Paling favorit minggu ini</small></div></div>
+      <div class="float f1"><i class="fa-solid fa-motorcycle"></i><div><b>Antar ±30 menit</b><small>Gratis ongkir ≥ Rp100.000</small></div></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="strip">
+      <div><i class="fa-solid fa-store"></i><span><b>Ambil di Toko</b><small>Tanpa antre, tinggal ambil</small></span></div>
+      <div><i class="fa-solid fa-motorcycle"></i><span><b>Diantar ke lokasimu</b><small>Kemasan rapat, kopi tetap segar</small></span></div>
+      <div><i class="fa-solid fa-qrcode"></i><span><b>QRIS &amp; e-wallet</b><small>GoPay, OVO, DANA, ShopeePay</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU (HTML + CSS saja) ===== -->
+<section id="menu" style="padding-top:40px">
+  <div class="container">
+    <div class="sec-head">
+      <div><h2>Pilih menumu</h2><p>Pilih kategori, lalu ketuk tombol ukuran untuk memesan lewat WhatsApp.</p></div>
+    </div>
+
+    <div class="menu-wrap">
+      <input type="radio" name="kategori" id="f-all" class="f-in" checked>
+      <input type="radio" name="kategori" id="f-kopi" class="f-in">
+      <input type="radio" name="kategori" id="f-susu" class="f-in">
+      <input type="radio" name="kategori" id="f-non" class="f-in">
+      <input type="radio" name="kategori" id="f-food" class="f-in">
+
+      <div class="chips">
+        <label for="f-all" class="chip">Semua</label>
+        <label for="f-kopi" class="chip">Kopi</label>
+        <label for="f-susu" class="chip">Kopi Susu</label>
+        <label for="f-non" class="chip">Non-Kopi</label>
+        <label for="f-food" class="chip">Makanan</label>
+      </div>
+
+      <div class="menu-grid">
+        <article class="card" data-cat="kopi">
+          <div class="ph"><span class="fallback">☕</span><img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=700&h=520&fit=crop" alt="Espresso" loading="lazy"></div>
+          <div class="body">
+            <h3>Espresso</h3>
+            <p class="desc">Shot espresso pekat dengan crema tebal dari biji arabika pilihan.</p>
+            <div class="priceline"><span class="price">Rp22.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Espresso%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp22.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Espresso%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp27.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="kopi">
+          <div class="ph"><span class="fallback">☕</span><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=700&h=520&fit=crop" alt="Americano" loading="lazy"></div>
+          <div class="body">
+            <h3>Americano</h3>
+            <p class="desc">Espresso dengan air, bersih, ringan, dan segar.</p>
+            <div class="priceline"><span class="price">Rp25.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Americano%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp25.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Americano%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp30.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="kopi">
+          <div class="ph"><span class="fallback">☕</span><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=700&h=520&fit=crop" alt="Cappuccino" loading="lazy"></div>
+          <div class="body">
+            <h3>Cappuccino</h3>
+            <p class="desc">Espresso, susu steam, dan foam tebal yang lembut.</p>
+            <div class="priceline"><span class="price">Rp30.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Cappuccino%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp30.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Cappuccino%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp35.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="kopi">
+          <div class="ph"><span class="fallback">☕</span><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&h=520&fit=crop" alt="Cafe Latte" loading="lazy"><span class="badge">Favorit</span></div>
+          <div class="body">
+            <h3>Cafe Latte</h3>
+            <p class="desc">Perpaduan espresso dan susu creamy dengan latte art.</p>
+            <div class="priceline"><span class="price">Rp30.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Cafe%20Latte%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp30.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Cafe%20Latte%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp35.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="kopi">
+          <div class="ph"><span class="fallback">☕</span><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&h=520&fit=crop" alt="V60 Single Origin" loading="lazy"></div>
+          <div class="body">
+            <h3>V60 Single Origin</h3>
+            <p class="desc">Seduh manual, rasa buah dan floral, biji berganti tiap minggu.</p>
+            <div class="priceline"><span class="price">Rp35.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20V60%20Single%20Origin%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp35.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20V60%20Single%20Origin%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp40.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="kopi">
+          <div class="ph"><span class="fallback">🧊</span><img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=700&h=520&fit=crop" alt="Cold Brew" loading="lazy"></div>
+          <div class="body">
+            <h3>Cold Brew</h3>
+            <p class="desc">Diseduh dingin 16 jam: halus, manis alami, minim pahit.</p>
+            <div class="priceline"><span class="price">Rp32.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Cold%20Brew%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp32.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Cold%20Brew%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp37.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="susu">
+          <div class="ph"><span class="fallback">🥤</span><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=700&h=520&fit=crop" alt="Kopi Susu Aren" loading="lazy"><span class="badge">Terlaris</span></div>
+          <div class="body">
+            <h3>Kopi Susu Aren</h3>
+            <p class="desc">Kopi susu dengan gula aren asli, manis legit yang pas.</p>
+            <div class="priceline"><span class="price">Rp28.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Kopi%20Susu%20Aren%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp28.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Kopi%20Susu%20Aren%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp33.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="susu">
+          <div class="ph"><span class="fallback">🥤</span><img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=700&h=520&fit=crop" alt="Kopi Susu Pandan" loading="lazy"><span class="badge">Baru</span></div>
+          <div class="body">
+            <h3>Kopi Susu Pandan</h3>
+            <p class="desc">Kopi susu dengan sirup pandan harum, wangi dan creamy.</p>
+            <div class="priceline"><span class="price">Rp30.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Kopi%20Susu%20Pandan%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp30.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Kopi%20Susu%20Pandan%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp35.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="susu">
+          <div class="ph"><span class="fallback">🥤</span><img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=700&h=520&fit=crop" alt="Caramel Macchiato" loading="lazy"></div>
+          <div class="body">
+            <h3>Caramel Macchiato</h3>
+            <p class="desc">Susu vanila, espresso, dan saus karamel di atasnya.</p>
+            <div class="priceline"><span class="price">Rp34.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Caramel%20Macchiato%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp34.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Caramel%20Macchiato%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp39.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="non">
+          <div class="ph"><span class="fallback">🍵</span><img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=700&h=520&fit=crop" alt="Matcha Latte" loading="lazy"></div>
+          <div class="body">
+            <h3>Matcha Latte</h3>
+            <p class="desc">Matcha Jepang dengan susu segar, lembut dan tidak pahit.</p>
+            <div class="priceline"><span class="price">Rp32.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Matcha%20Latte%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp32.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Matcha%20Latte%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp37.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="non">
+          <div class="ph"><span class="fallback">🍫</span><img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=700&h=520&fit=crop" alt="Cokelat Premium" loading="lazy"></div>
+          <div class="body">
+            <h3>Cokelat Premium</h3>
+            <p class="desc">Cokelat pekat, kental, dan hangat di lidah.</p>
+            <div class="priceline"><span class="price">Rp28.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Cokelat%20Premium%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp28.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Cokelat%20Premium%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp33.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="non">
+          <div class="ph"><span class="fallback">🥛</span><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=700&h=520&fit=crop" alt="Red Velvet Latte" loading="lazy"></div>
+          <div class="body">
+            <h3>Red Velvet Latte</h3>
+            <p class="desc">Susu red velvet manis lembut dengan krim di atasnya.</p>
+            <div class="priceline"><span class="price">Rp30.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Red%20Velvet%20Latte%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp30.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Red%20Velvet%20Latte%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp35.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="non">
+          <div class="ph"><span class="fallback">🍋</span><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=700&h=520&fit=crop" alt="Lemon Tea" loading="lazy"></div>
+          <div class="body">
+            <h3>Lemon Tea</h3>
+            <p class="desc">Teh segar dengan perasan lemon, cocok untuk siang hari.</p>
+            <div class="priceline"><span class="price">Rp22.000</span><span class="from">mulai dari</span></div>
+            <div class="order"><a class="o-btn" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Lemon%20Tea%20%28Regular%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Regular<small>Rp22.000</small></a><a class="o-btn alt" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Lemon%20Tea%20%28Large%29.%20Mohon%20konfirmasi%20suhu%20%26%20level%20gula%20ya." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Large<small>Rp27.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="food">
+          <div class="ph"><span class="fallback">🥐</span><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700&h=520&fit=crop" alt="Butter Croissant" loading="lazy"></div>
+          <div class="body">
+            <h3>Butter Croissant</h3>
+            <p class="desc">Croissant renyah dengan mentega, dipanggang setiap pagi.</p>
+            <div class="priceline"><span class="price">Rp25.000</span></div>
+            <div class="order"><a class="o-btn one" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Butter%20Croissant." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Pesan<small>Rp25.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="food">
+          <div class="ph"><span class="fallback">🍞</span><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=700&h=520&fit=crop" alt="Roti Bakar Cokelat Keju" loading="lazy"></div>
+          <div class="body">
+            <h3>Roti Bakar Cokelat Keju</h3>
+            <p class="desc">Roti tebal bakar dengan cokelat leleh dan keju parut.</p>
+            <div class="priceline"><span class="price">Rp24.000</span></div>
+            <div class="order"><a class="o-btn one" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Roti%20Bakar%20Cokelat%20Keju." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Pesan<small>Rp24.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="food">
+          <div class="ph"><span class="fallback">🍌</span><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700&h=520&fit=crop" alt="Banana Bread" loading="lazy"></div>
+          <div class="body">
+            <h3>Banana Bread</h3>
+            <p class="desc">Roti pisang lembut dan wangi, enak bareng kopi hitam.</p>
+            <div class="priceline"><span class="price">Rp22.000</span></div>
+            <div class="order"><a class="o-btn one" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Banana%20Bread." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Pesan<small>Rp22.000</small></a></div>
+          </div>
+        </article>
+        <article class="card" data-cat="food">
+          <div class="ph"><span class="fallback">🍪</span><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=700&h=520&fit=crop" alt="Choco Chip Cookies" loading="lazy"></div>
+          <div class="body">
+            <h3>Choco Chip Cookies</h3>
+            <p class="desc">Cookies tebal dengan choco chip melimpah.</p>
+            <div class="priceline"><span class="price">Rp18.000</span></div>
+            <div class="order"><a class="o-btn one" href="https://wa.me/6281234567890?text=Halo%20Amerikopi%2C%20saya%20mau%20pesan%201x%20Choco%20Chip%20Cookies." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Pesan<small>Rp18.000</small></a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cara" class="how">
+  <div class="container">
+    <div class="sec-head"><div><h2>Cara pesan</h2><p>Tiga langkah, kopi siap.</p></div></div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Pilih menu</h3><p>Telusuri kopi, non-kopi, dan camilan lewat filter kategori di atas.</p></div>
+      <div class="step"><div class="n">2</div><h3>Ketuk ukuran</h3><p>Tekan tombol Regular atau Large. WhatsApp terbuka dengan pesanan yang sudah tertulis.</p></div>
+      <div class="step"><div class="n">3</div><h3>Konfirmasi &amp; nikmati</h3><p>Sebutkan suhu, level gula, dan ambil di Toko atau diantar. Kami siapkan, kamu tinggal menikmati.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimoni">
+  <div class="container">
+    <div class="sec-head"><div><h2>Kata pelanggan</h2><p>Mereka sudah merasakan kopinya.</p></div></div>
+    <div class="testi">
+      <div class="t"><div class="stars">★★★★★</div><p>"Pesan dari meja kerja, pas turun kopinya sudah siap. Nggak ada lagi antre 20 menit di jam makan siang."</p><div class="who"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&amp;h=80&amp;fit=crop&amp;crop=face" alt="Angel"><div><b>Angel</b><small>Marketing Manager</small></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><p>"Rasanya konsisten tiap kali pesan, dan custom-ku selalu tepat. Kopi susu aren-nya juara."</p><div class="who"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&amp;h=80&amp;fit=crop&amp;crop=face" alt="Asep Dahlan"><div><b>Asep Dahlan</b><small>Software Engineer</small></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><p>"Gampang banget pesan buat satu tim. Diantar cepat dan kemasannya rapi, nggak tumpah."</p><div class="who"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&amp;h=80&amp;fit=crop&amp;crop=face" alt="Neneng"><div><b>Neneng</b><small>Mahasiswa Pascasarjana</small></div></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="lokasi">
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:12px"><i class="fa-solid fa-mug-hot"></i><span>Amerikopi</span></div>
+        <p>Kopi pilihan, diseduh segar, dan dipesan semudah beberapa ketukan.</p>
+      </div>
+      <div>
+        <h4>Jam Buka</h4>
+        <ul><li>Senin – Jumat: 08.00 – 24.00</li><li>Sabtu – Minggu: 08.00 – 02.00</li></ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul><li><i class="fa-solid fa-location-dot"></i> Jl. AmerikaKopi No. 1 Kota Bandung</li><li><i class="fa-brands fa-whatsapp"></i> 0812-3456-7890</li><li><i class="fa-brands fa-instagram"></i> @amerikopi</li></ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 Amerikopi. Dzakwan Haidar Makayasa.</div>
+  </div>
+</footer>
+</body>
+</html>
